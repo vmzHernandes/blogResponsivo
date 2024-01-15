@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #e6e8e6;
+    overflow-x: hidden;
+}
+
+/* Texto */
+
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    color: #36634f;
+}
+
+.titulo {
+    font-size: 2.25rem;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #6c8d5f;
+    
+}
+
+.subtitulo, a {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.artigo-ler-mais {
+    text-decoration: none;
+    color: #36634f;
+}
+
+.artigo-ler-mais:hover {
+    color: #6c8d5f;
+}
+
+.artigo-info {
+    font-size: 0.85rem;
+}
+
+/* Layout header */
+
+header {
+    background-color: #ced0ce; 
+    padding: 1.5em 0;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #36634f;
+}
+
+nav a:hover, nav a:focus {
+    color: #6c8d5f;
+}
+
+/* Layout main */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.artigo-info {
+    margin: 0.5rem 0;
+}
+
+.artigo-principal {
+    display: flex;
+    flex-direction: column;
+    border-bottom: #36634f 1px solid;
+    padding-bottom: 1em;
+}
+
+.artigo-recente {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.artigo-texto {
+    margin-bottom: 0.5rem;
+}
+
+/* Layout aside */
+
+.sidebar-widget {
+    padding-bottom: 1em;
+}
+
+.widget-link {
+    text-decoration: none;
+    color: #36634f;
+}
+
+.widget-link:hover {
+    color: #6c8d5f;
+}
+
+/* Responsividade */
+
+@media (min-width: 530px) {
+    .titulo, .subtitulo {
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar {
+        border-top: #36634f 1px solid;
+    }
+}
+
+@media (min-width: 1030px) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    main {
+        width: 70%;
+        margin-right: 3rem;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    .sidebar {
+        border-top: none;
+    }
+}
+
